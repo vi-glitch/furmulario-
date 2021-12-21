@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario De Contato</title>
+</head>
+<body>
+    <div class="container">
+        <header class="cabeça">
+            <h1 class="text-center">
+                Formulario 
+            </h1>
+            <p class="discription">
+                Obrigado pela sua estadia, responda esse formulario de feadbeak📝
+            </p>
+        </header>
+        <form id="form">
+            <div class="form-group">
+                <label id="nome" for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" class="form-controls" placeholder="insira seu nome" required/>
+            </div>
+            <div class="form-group">
+                <label id="email" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-controls" placeholder="insira seu email" required/>
+            </div>
+
+            <div class="form-group">
+                <label id="idade" for="idade">idade<span class="clue">(optional)</span></label>
+                <input type="number" name="idade" id="idade" min="18" max="99" class="form-controls" placeholder="idade" />
+            </div>
+
+            <div class="form-group">
+                <p>sexo<span class="clue">(optional)</span></p>
+                <label><input  name="sexo" value="Masculino" type="radio" class="input-radio">Masculino</label>
+                <label><input name="sexo" value="Feminino" type="radio" class="input-radio" >Feminino</label>
+                <label><input  name="sexo" value="Não Binario" type="radio" class="input-radio">Não Binario</label>
+                <label><input  name="sexo" value="Prefiro Não Responder" type="radio" class="input-radio">Prefiro Não Responder</label>
+             </div>
+
+            <div class="form-group">
+                <p>Qual destas opções melhor descreve a sua sastifação?</p>
+                <select id="dropdow" name="role" class="form-controls" required>
+                    <option disabled selected value>selecione uma opção</option>
+                    <option value="legal">Legal😀</option>
+                    <option value="decepicionante">Decepicionante😢</option>
+                    <option value="poderia ter sido melhor">Poderia Ter Sido Melhor😞</option>
+                    <option value="maravilhoso">Maravilhoso🤩</option>
+                    <option value="não sei dizer">não sei dizer😕</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+               <p>Você nos indicaria para seus amigos(as)?</p>
+               <label><input  name="recomendação" value="definitivamente" type="radio" class="input-radio">Definitivamante</label>
+               <label><input name="recomendação" value="talvez" type="radio" class="input-radio" >Talvez</label>
+               <label><input  name="recomendação" value=" não Mesmo" type="radio" class="input-radio">Não  Mesmo</label>
+            </div>
+            <div class="form-group">
+               <P>Comente alguma sugestão que a(o) deixaria satisfeita</P>
+               <textarea id="comentario" class="input-textarea" name="comentario" placeholder="De O Seu Comentario Aqui..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-input">Enviar</button>
+               
+               
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
